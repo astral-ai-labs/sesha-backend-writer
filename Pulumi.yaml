@@ -1,0 +1,5 @@
+name: sesha-pulumi
+runtime: nodejs
+description: sesha infrastructure
+main: infrastructure/index.ts
+stackConfigDir: config

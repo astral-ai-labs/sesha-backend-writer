@@ -1,0 +1,11 @@
+{
+  "name": "copy",
+  "license": "UNLICENSED",
+  "description": "This script will take data from one table and copy to another if the data does not yet exist.",
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.490.0",
+    "aws-sdk": "^2.1536.0",
+    "dotenv": "^16.3.1"
+  }
+}

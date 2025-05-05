@@ -1,0 +1,6 @@
+/bin/
+node_modules
+/lambdas/lambda-handler/sesha-systems-service-account-key.json
+Pulumi.sesha-backend.yaml
+.vscode
+.env

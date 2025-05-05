@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "CommonJS",
+      "strict": true,
+      "outDir": "./dist",
+      "rootDir": "./",
+      "esModuleInterop": true,
+      "lib": ["ES2021.String"]
+    },
+    "include": ["*.ts"],
+  }
+  

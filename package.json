@@ -1,0 +1,25 @@
+{
+  "name": "sesha-pulumi",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/jwk-to-pem": "^2.0.3",
+    "@types/node": "^16",
+    "@types/uuid": "^9.0.7"
+  },
+  "scripts": {
+    "pulumi:setS3Bucket": "pulumi logout && pulumi login --cloud-url s3://sehsa-pulumi-bucket/backend",
+    "pulumi:BackendSelect": "pulumi stack select sesha-backend",
+    "pulumi:WsSelect": "pulumi stack select websocket-api",
+    "pulumi:backendDeploy": "npm run pulumi:BackendSelect && npm run pulumi:setS3Bucket && cd lambdas/lambda-handler && npm run build && cd ../.. && pulumi up",
+    "pulumi:WsDeploy": "npm run pulumi:WsSelect && npm run pulumi:setS3Bucket && cd lambdas/lambda-handler && npm run build && cd ../.. && pulumi up",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@pulumi/aws": "^5.42.0",
+    "@pulumi/aws-native": "^0.81.0",
+    "@pulumi/pulumi": "^3.90.0",
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2",
+    "prettier": "^3.1.1"
+  }
+}

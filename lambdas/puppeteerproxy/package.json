@@ -1,0 +1,22 @@
+{
+  "name": "puppeteer-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.504.0",
+    "@sparticuz/chromium-min": "^121.0.0",
+    "proxy-chain": "^2.4.0",
+    "puppeteer": "^22.0.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "search-handler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.1551.0",
+    "axios": "^1.5.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.507.0",
+    "@aws-sdk/client-opensearch": "^3.508.0",
+    "@opensearch-project/opensearch": "^2.5.0"
+  }
+}
